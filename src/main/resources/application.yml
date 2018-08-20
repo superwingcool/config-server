@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/superwingcool/config.git
+          username: superwingcool@gmail.com
+          password: Winger123@
+          basedir: /tmp/config/basedir/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+server:
+  port: 9401
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
