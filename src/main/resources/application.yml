@@ -9,6 +9,12 @@ spring:
           username: superwingcool@gmail.com
           password: Winger123@
           basedir: /tmp/config/basedir/
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+
 eureka:
   client:
     service-url:
